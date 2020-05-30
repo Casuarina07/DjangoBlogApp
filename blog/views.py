@@ -18,6 +18,7 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
+# changing from a function to a class
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html' # <app>/<model>_<viewtype>.html
